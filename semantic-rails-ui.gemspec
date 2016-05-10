@@ -6,11 +6,10 @@ Gem::Specification.new do |spec|
   spec.version       = SemanticRailsUi::VERSION
   spec.authors       = ["Igor Jancev"]
   spec.email         = ["igor@masterybits.com"]
-  spec.summary       = %q{TODO Summary what the gem is for}
-  spec.description   = %q{TODO Longer description of the gem}
+  spec.summary       = %q{Rails helpers for the semantic-ui css framework}
+  spec.description   = %q{Create beautiful hrml layouts with semantic-ui, simple_form and rails}
   spec.homepage      = "https://github.com/igorj/semantic-rails-ui"
   spec.license       = "MIT"
-
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^test/}) }
   spec.require_paths = ["lib"]
@@ -25,7 +24,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "sqlite3"
 
-
   spec.add_dependency "rails", "~> 4.2.6"
-
+  spec.add_dependency "semantic-ui-sass", "~> 2.1.8"
+  spec.add_dependency "simple_form", "~> 3.2.1"
 end
