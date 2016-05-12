@@ -11,8 +11,8 @@ module SemanticRailsUi
     end
 
     def ui_flash_messages(options = {})
-      options.merge(id: "messages", class: "messages")
-      content_tag :div, options do
+      merged_options = { id: "messages", class: "messages" }.merge(options)
+      content_tag :div, merged_options do
         messages = ""
         flash.each do |name, msg|
           messages += content_tag :div, class: "ui #{name} message" do
