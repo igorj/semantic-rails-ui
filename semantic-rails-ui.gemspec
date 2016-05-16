@@ -27,5 +27,4 @@ Gem::Specification.new do |spec|
   spec.add_dependency "rails", "~> 4.2.6"
   spec.add_dependency "semantic-ui-sass", "~> 2.1.8"
   spec.add_dependency "simple_form", "~> 3.2.1"
-  spec.add_dependency "handlebars_assets", "~> 0.20.2"
 end

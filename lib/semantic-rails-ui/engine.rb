@@ -1,6 +1,5 @@
 require 'semantic-ui-sass'
 require 'simple_form'
-require 'handlebars_assets'
 
 module SemanticRailsUi
   class Engine < ::Rails::Engine

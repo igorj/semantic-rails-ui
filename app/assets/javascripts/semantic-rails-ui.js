@@ -11,8 +11,6 @@
 // about supported directives.
 //
 //= require semantic-ui
-//= require handlebars.runtime
-//= require semantic-rails-ui/templates
 //= require semantic-rails-ui/menu
 //= require semantic-rails-ui/message
 //= require semantic-rails-ui/confirm
