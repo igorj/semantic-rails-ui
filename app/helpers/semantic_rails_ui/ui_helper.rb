@@ -29,5 +29,17 @@ module SemanticRailsUi
     def ui_icon(icon_name)
       content_tag(:i, '', class: "#{icon_name} icon")
     end
+
+    def ui_delete_link(text, url, message)
+      if text == nil
+        text = ''
+        css_class = "ui red tiny compact link button"
+      else
+        css_class = "ui red tiny compact basic button"
+      end
+      link_to url, class: css_class, method: :delete, data: { confirm: message } do
+        ui_icon("remove link") + text
+      end
+    end
   end
 end
