@@ -11,24 +11,8 @@
 // about supported directives.
 //
 //= require semantic-ui
+//= require handlebars.runtime
+//= require semantic-rails-ui/templates
 //= require semantic-rails-ui/menu
 //= require semantic-rails-ui/message
 //= require semantic-rails-ui/confirm
-
-
-// semantic-ui confirmation dialog:
-//
-// <div class="ui small modal">
-//     <div class="header">
-//     Delete user
-// </div>
-// <div class="content">Are you sure?</div>
-// <div class="actions">
-//     <div class="ui red basic cancel inverted button">
-//     <i class="remove icon"></i>No
-//     </div>
-//     <div class="ui green ok inverted button">
-//     <i class="checkmark icon"></i>Yes
-//     </div>
-//     </div>
-//     </div>
