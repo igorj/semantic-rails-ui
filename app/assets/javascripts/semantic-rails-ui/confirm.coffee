@@ -15,8 +15,8 @@ jQuery ->
       </div>
     """
     $('body').append(confirm_dialog)
-    $('ui-confirm-dialog').modal(
-      'closable: false'
+    $('#ui-confirm-dialog').modal(
+      closable: false
       onApprove: -> return true
       onDeny: -> return false
     ).modal('show')
