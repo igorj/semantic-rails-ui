@@ -7,5 +7,5 @@
   </p>
 
 <% end -%>
-<%%= link_to 'Edit', edit_<%= singular_table_name %>_path(<%= singular_table_name %>), class: 'ui tiny compact basic button' %>
-<%%= link_to 'Edit', <%= index_helper %>_path, class: 'ui tiny compact basic button' %>
+<%%= link_to 'Edit', edit_<%= singular_table_name %>_path(@<%= singular_table_name %>), class: 'ui tiny compact basic button' %>
+<%%= link_to 'Back', <%= index_helper %>_path, class: 'ui tiny compact basic button' %>
