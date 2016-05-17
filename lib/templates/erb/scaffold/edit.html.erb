@@ -1,0 +1,3 @@
+<%%= ui_icon_header 'Edit <%= singular_table_name.titleize %>', 'edit' %>
+
+<%%= render 'form', url: @<%= singular_table_name %>, cancel_url: <%= index_helper %>_path %>

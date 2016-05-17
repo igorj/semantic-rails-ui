@@ -1,0 +1,14 @@
+<%%= simple_form_for @<%= singular_table_name %>, url: url do |f| %>
+<% attributes.each do |attribute| -%>
+  <% if attribute.password_digest? -%>
+    <div class='two fields'>
+      <%%= f.input :password, label: 'Password', placeholder: '******' %>
+      <%%= f.input :password_confirmation, label: 'Password (confirmation)', placeholder: '******' %>
+    </div>
+  <% else -%>
+  <%%= f.input :<%= attribute.column_name %> %>
+  <% end -%>
+<% end -%>
+  <%%= f.button :submit %>
+  <%%= link_to 'Cancel', cancel_url, class: 'ui button' %>
+<%% end %>

@@ -1,0 +1,31 @@
+<%%= ui_icon_header '<%= plural_table_name.titleize %>', 'list' %>
+
+<table class='ui striped table'>
+  <thead>
+  <tr>
+    <% attributes.reject(&:password_digest?).each do |attribute| -%>
+    <th><%= attribute.human_name %></th>
+    <% end -%>
+    <th>&nbsp;</th>
+  </tr>
+  </thead>
+  <tbody>
+  <%% @<%= plural_table_name %>.each do |<%= singular_table_name %>| %>
+    <tr>
+      <% attributes.reject(&:password_digest?).each do |attribute| -%>
+      <td><%%= <%= singular_table_name %>.<%= attribute.name %> %></td>
+      <% end -%>
+      <td>
+        <%%= link_to 'Show', <%= singular_table_name %>, class: 'ui tiny compact basic button' %>
+        <%%= link_to 'Edit', edit_<%= singular_table_name %>_path(<%= singular_table_name %>), class: 'ui tiny compact basic button' %>
+        <%%= ui_delete_link 'Destroy', <%= singular_table_name %>, 'Are you sure?' %>
+      </td>
+    </tr>
+  <%% end %>
+  </tbody>
+</table>
+
+<%%= link_to new_<%= singular_table_name %>_path, class: 'ui right floated primary labeled icon button' do %>
+  <i class='add circle icon'></i>
+  New <%= human_name %>
+<%% end %>
