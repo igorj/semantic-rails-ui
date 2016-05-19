@@ -10,6 +10,9 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery
+//= require jquery_ujs
+//= require turbolinks
 //= require semantic-ui
 //= require semantic-rails-ui/menu
 //= require semantic-rails-ui/message
