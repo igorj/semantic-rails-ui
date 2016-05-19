@@ -1,0 +1,31 @@
+<%= ui_icon_header 'Posts', 'list' %>
+
+<table class='ui striped table'>
+  <thead>
+  <tr>
+        <th>Title</th>
+        <th>Body</th>
+        <th>Published</th>
+        <th>&nbsp;</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @posts.each do |post| %>
+    <tr>
+            <td><%= post.title %></td>
+            <td><%= post.body %></td>
+            <td><%= post.published %></td>
+            <td>
+        <%= link_to 'Show', post, class: 'ui tiny compact basic button' %>
+        <%= link_to 'Edit', edit_post_path(post), class: 'ui tiny compact basic button' %>
+        <%= ui_delete_link 'Destroy', post, 'Are you sure?' %>
+      </td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<%= link_to new_post_path, class: 'ui right floated primary labeled icon button' do %>
+  <i class='add circle icon'></i>
+  New Post
+<% end %>

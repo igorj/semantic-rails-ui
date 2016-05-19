@@ -25,6 +25,11 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "sqlite3"
 
   spec.add_dependency "rails", "~> 4.2.6"
+  spec.add_dependency "sass-rails", "~> 5.0"
+  spec.add_dependency "uglifier", "~> 3.0"
+  spec.add_dependency "coffee-rails", "~> 4.1.0"
+  spec.add_dependency "jquery-rails", "~> 4.1.0"
+  spec.add_dependency "turbolinks", "~> 2.5.3"
   spec.add_dependency "semantic-ui-sass", "~> 2.1.8"
   spec.add_dependency "simple_form", "~> 3.2.1"
 end
