@@ -13,7 +13,10 @@
 [coveralls]: https://coveralls.io/r/igorj/semantic-rails-ui
 
 
-TODO Description of SemanticRailsUi
+- Integration with semantic-ui (with semantic-ui-sass gem) and simple_form.
+- The gem also includes coffee-rails, sass-rails, jquery-rails, uglifier and turbolinks, so you don't have to include them in your rails application
+- Adds following view helpers: `ui_flash_messages`, `ui_icon`, `ui_icon_header`, `ui_delete_link`
+- Modifies the default rails scaffolding templates so that you get nice semantic-ui scaffolds out of the box
 
 ## Installation
 
@@ -33,7 +36,34 @@ Or install it yourself as:
 
 ## Usage
 
-TODO Describe how to use this gem
+Add semantic-rails-ui to your assets: 
+
+application.js
+```
+//= require semantic-rails-ui
+```
+
+application.sass: 
+```
+@import "semantic-rails-ui"
+```
+
+Now you can generate a scaffold and enjoy the semanic-ui look & feel. 
+
+You can also use the provided helpers: 
+
+```
+<%= ui_icon_header "Welcome home", "home" %>
+```
+
+```
+<%= ui_delete_link 'Destroy', article, 'Are you sure?' %>
+```
+
+```
+<%= ui_flash_messages %>
+```
+
 
 ## Development
 
