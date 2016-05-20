@@ -1,4 +1,4 @@
-# SemanticRailsUi
+# semantic-rails-ui
 
 [![Gem Version](http://img.shields.io/gem/v/semantic-rails-ui.svg)][gem]
 [![Build Status](http://img.shields.io/travis/igorj/semantic-rails-ui.svg)][travis]
@@ -18,7 +18,8 @@
 - Adds following view helpers: `ui_flash_messages`, `ui_icon`, `ui_icon_header`, `ui_delete_link`
 - Modifies the default rails scaffolding templates so that you get nice semantic-ui scaffolds out of the box
 
-![Scaffold screenshot](docs/screenshot.png)
+![List scaffold screenshot](docs/list.png)
+![Form scaffold screenshot](docs/form.png)
 
 ## Installation
 
