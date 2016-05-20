@@ -10,6 +10,8 @@ module SemanticRailsUi
       end
     end
 
+    # supported flash message types: :error, :success, :warning, :info
+    # todo: add support for :alert and :notice
     def ui_flash_messages(options = {})
       merged_options = { id: "messages", class: "messages" }.merge(options)
       content_tag :div, merged_options do
@@ -26,10 +28,12 @@ module SemanticRailsUi
       end
     end
 
+    # renders a semantic-ui icon
     def ui_icon(icon_name)
       content_tag(:i, '', class: "#{icon_name} icon")
     end
 
+    # renders a delete link with semantic-ui confirmation dialog instead of default js confirmation
     def ui_delete_link(button_text, url, message)
       link_to url, class: "ui red tiny compact basic button", method: :delete,
               data: { confirm: message, 'confirm-title' => button_text } do
