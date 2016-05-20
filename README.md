@@ -48,6 +48,26 @@ application.sass:
 @import "semantic-rails-ui"
 ```
 
+Add flash messages to application.html.erb:
+```
+<body>
+  ...
+  <div id="content">
+    <%= ui_flash_messages %>
+    <%= yield %>
+  </div>
+</body>
+```
+
+Add some basic css to application.sass: 
+```
+body
+  background-color: #f7f0e9
+
+#content
+  margin: 2em
+```
+
 Now you can generate a scaffold and enjoy the semanic-ui look & feel. 
 
 You can also use the provided helpers: 
@@ -58,10 +78,6 @@ You can also use the provided helpers:
 
 ```
 <%= ui_delete_link 'Destroy', article, 'Are you sure?' %>
-```
-
-```
-<%= ui_flash_messages %>
 ```
 
 
