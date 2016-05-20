@@ -18,6 +18,8 @@
 - Adds following view helpers: `ui_flash_messages`, `ui_icon`, `ui_icon_header`, `ui_delete_link`
 - Modifies the default rails scaffolding templates so that you get nice semantic-ui scaffolds out of the box
 
+[Scaffold screenshot!](docs/screenshot.png)
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -30,9 +32,6 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install semantic-rails-ui
 
 ## Usage
 
