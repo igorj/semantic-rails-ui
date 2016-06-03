@@ -4,9 +4,9 @@
 /_yardoc/
 /coverage/
 /test/coverage/
+/test/reports
 /doc/
 /pkg/
-/spec/reports/
 /tmp/
 
 test/dummy/db/*.sqlite3
