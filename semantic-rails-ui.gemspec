@@ -39,4 +39,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency "turbolinks", "~> 2.5.3"
   spec.add_dependency "semantic-ui-sass", "~> 2.1.8"
   spec.add_dependency "simple_form", "~> 3.2.1"
+  spec.add_dependency "momentjs-rails", "~> 2.11.1"
 end

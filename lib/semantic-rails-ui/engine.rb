@@ -2,6 +2,7 @@ require 'jquery-rails'
 require 'turbolinks'
 require 'semantic-ui-sass'
 require 'simple_form'
+require 'momentjs-rails'
 
 module SemanticRailsUi
   class Engine < ::Rails::Engine
