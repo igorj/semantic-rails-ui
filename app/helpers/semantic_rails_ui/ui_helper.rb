@@ -40,5 +40,13 @@ module SemanticRailsUi
         ui_icon("remove link") + button_text
       end
     end
+
+    # renders a simple delete link without text with semantic-ui confirmation dialog instead of default js confirmation
+    def ui_simple_delete_link(url, message)
+      link_to url, method: :delete,
+              data: { confirm: message, 'confirm-title' => "Delete" }, remote: true do
+        ui_icon("red remove link")
+      end
+    end
   end
 end
