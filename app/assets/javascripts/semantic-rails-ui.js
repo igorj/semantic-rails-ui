@@ -15,6 +15,7 @@
 //= require turbolinks
 //= require moment
 //= require semantic-ui
+//= require semantic-rails-ui/behaviour
 //= require semantic-rails-ui/menu
 //= require semantic-rails-ui/message
 //= require semantic-rails-ui/confirm
