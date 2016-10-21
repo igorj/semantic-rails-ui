@@ -34,18 +34,18 @@ module SemanticRailsUi
     end
 
     # renders a delete link with semantic-ui confirmation dialog instead of default js confirmation
-    def ui_delete_link(button_text, url, message)
+    def ui_delete_link(button_text, url, message, remote = false)
       link_to url, class: "ui red tiny compact basic button", method: :delete,
-              data: { confirm: message, 'confirm-title' => button_text } do
-        ui_icon("remove link") + button_text
+              data: { confirm: message, 'confirm-title' => button_text }, remote: remote do
+        ui_icon("trash outline") + button_text
       end
     end
 
     # renders a simple delete link without text with semantic-ui confirmation dialog instead of default js confirmation
-    def ui_simple_delete_link(url, message)
+    def ui_simple_delete_link(url, message, remote = false)
       link_to url, method: :delete,
-              data: { confirm: message, 'confirm-title' => "Delete" }, remote: true do
-        ui_icon("red remove link")
+              data: { confirm: message, 'confirm-title' => "Delete" }, remote: remote do
+        ui_icon("trash outline")
       end
     end
   end
