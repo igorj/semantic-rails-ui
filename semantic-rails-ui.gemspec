@@ -30,6 +30,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "selenium-webdriver", "~> 2.49.0"
   spec.add_development_dependency "poltergeist", "~> 1.8.1"
   spec.add_development_dependency "database_cleaner", "~> 1.5.2"
+  spec.add_development_dependency "nokogiri", "1.6.8"
 
   spec.add_dependency "rails", "~> 4.2.6"
   spec.add_dependency "sass-rails", "~> 5.0"
