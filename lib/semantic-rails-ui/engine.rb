@@ -1,4 +1,5 @@
 require 'jquery-rails'
+require 'jquery-turbolinks'
 require 'turbolinks'
 require 'semantic-ui-sass'
 require 'simple_form'
