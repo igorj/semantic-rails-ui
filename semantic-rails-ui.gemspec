@@ -38,8 +38,10 @@ Gem::Specification.new do |spec|
   spec.add_dependency "coffee-rails", "~> 4.1.0"
   spec.add_dependency "jquery-rails", "~> 4.1.0"
   spec.add_dependency "turbolinks", "~> 2.5.3"
+  spec.add_dependency "autoprefixer-rails", "~> 6.5.3"
   spec.add_dependency "jquery-turbolinks", "~> 2.1.0"
   spec.add_dependency "semantic-ui-sass", "~> 2.2.6.0"
   spec.add_dependency "simple_form", "~> 3.2.1"
   spec.add_dependency "momentjs-rails", "~> 2.11.1"
+  spec.add_dependency "active_link_to", "~> 1.0.3"
 end

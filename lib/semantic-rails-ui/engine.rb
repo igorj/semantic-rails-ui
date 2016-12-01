@@ -4,6 +4,8 @@ require 'turbolinks'
 require 'semantic-ui-sass'
 require 'simple_form'
 require 'momentjs-rails'
+require 'autoprefixer-rails'
+require 'active_link_to'
 
 module SemanticRailsUi
   class Engine < ::Rails::Engine
