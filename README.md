@@ -14,8 +14,8 @@
 
 
 - Integration with semantic-ui (with semantic-ui-sass gem) and simple_form.
-- The gem also includes coffee-rails, sass-rails, jquery-rails, uglifier and turbolinks, so you don't have to include them in your rails application
-- Adds following view helpers: `ui_flash_messages`, `ui_icon`, `ui_icon_header`, `ui_delete_link`
+- The gem also includes coffee-rails, sass-rails, jquery-rails, uglifier, turbolinks, autoprefixer-rails, as well as active_link_to, so you don't have to include them in your rails application
+- Adds following view helpers: `ui_flash_messages`, `ui_icon`, `ui_icon_header`, `ui_delete_link`, `ui_simple_delete_link`, `ui_nav_link_to`
 - Modifies the default rails scaffolding templates so that you get nice semantic-ui scaffolds out of the box
 
 ![List scaffold screenshot](docs/list.png)
@@ -48,17 +48,6 @@ application.sass:
 @import "semantic-rails-ui"
 ```
 
-Add flash messages to application.html.erb:
-```
-<body>
-  ...
-  <div id="content">
-    <%= ui_flash_messages %>
-    <%= yield %>
-  </div>
-</body>
-```
-
 Add some basic css to application.sass: 
 ```
 body
@@ -68,7 +57,44 @@ body
   margin: 2em
 ```
 
-Now you can generate a scaffold and enjoy the semanic-ui look & feel. 
+
+Create basic application layout: 
+
+**application.html.erb:**
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dummy</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<%= render 'layouts/navigation' %>
+<div id="content">
+  <%= ui_flash_messages %>
+  <%= yield %>
+</div>
+</body>
+</html>
+```
+
+Create the navigation partial: 
+
+**_navigation.html.erb:**
+```html
+<div id="navigation" class="ui menu">
+  <%= ui_nav_link_to root_path do %>
+    <i class="home icon"></i> Home
+  <% end %>
+  <%= ui_nav_link_to posts_path do %>
+    <i class="file text outline icon"></i> Posts
+  <% end %>
+</div>
+```
+
+Now you can generate a scaffold (for example: `rake g scaffold posts title body:text published:boolean`) and enjoy the semanic-ui look & feel. 
 
 You can also use the provided helpers: 
 
@@ -78,6 +104,10 @@ You can also use the provided helpers:
 
 ```
 <%= ui_delete_link 'Destroy', article, 'Are you sure?' %>
+```
+
+```
+<%= ui_nav_link_to 'Posts', posts_path %>
 ```
 
 
