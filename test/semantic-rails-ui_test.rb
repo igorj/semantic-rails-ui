@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class SemanticRailsUiTest < Minitest::Test
+class SemanticRailsUiTest < UnitTest
     def test_it_is_a_module
       assert_kind_of Module, SemanticRailsUi
     end
