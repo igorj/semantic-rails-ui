@@ -32,7 +32,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "rails", "~> 5.1.0.beta1"
   spec.add_dependency "activesupport", "~> 5.1.0.beta1"
-  spec.add_dependency "sass-rails", "6.0.0.beta1"
+#  spec.add_dependency "sass-rails", "6.0.0.beta1"
   spec.add_dependency "uglifier", "~> 3.1.4"
   spec.add_dependency "coffee-rails", "~> 4.2.1"
   spec.add_dependency "jquery-rails", "~> 4.2.2"
