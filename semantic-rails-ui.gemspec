@@ -30,8 +30,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "database_cleaner", "~> 1.5.2"
   spec.add_development_dependency "puma", "~> 3.7.1"
 
-  spec.add_dependency "rails", "~> 5.1.0.beta1"
-  spec.add_dependency "activesupport", "~> 5.1.0.beta1"
+  spec.add_dependency "rails", "5.1.0.beta1"
 #  spec.add_dependency "sass-rails", "6.0.0.beta1"
   spec.add_dependency "uglifier", "~> 3.1.4"
   spec.add_dependency "coffee-rails", "~> 4.2.1"
