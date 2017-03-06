@@ -22,12 +22,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "coveralls"
 
   spec.add_development_dependency "sqlite3"
-  spec.add_development_dependency "minitest-screenshot-reporter", "~> 0.0.2"
   spec.add_development_dependency "capybara", "~> 2.12.1"
-  spec.add_development_dependency "capybara_minitest_spec", "~> 1.0.5"
   spec.add_development_dependency "selenium-webdriver", "~> 3.2.2"
   spec.add_development_dependency "poltergeist", "~> 1.8.1"
-  spec.add_development_dependency "database_cleaner", "~> 1.5.2"
   spec.add_development_dependency "puma", "~> 3.7.1"
 
   spec.add_dependency "rails", "5.1.0.beta1"
