@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require moment
 //= require semantic-ui
 //= require semantic-rails-ui/behaviour

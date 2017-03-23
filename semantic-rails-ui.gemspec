@@ -32,7 +32,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency "uglifier", "~> 3.1.4"
   spec.add_dependency "coffee-rails", "~> 4.2.1"
   spec.add_dependency "jquery-rails", "~> 4.2.2"
-  spec.add_dependency "turbolinks", "~> 5"
   spec.add_dependency "autoprefixer-rails", "~> 6.7.6"
   spec.add_dependency "semantic-ui-sass", "~> 2.2.9.3"
   spec.add_dependency "simple_form", "~> 3.4.0"
