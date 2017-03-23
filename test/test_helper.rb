@@ -3,10 +3,8 @@ Coveralls.wear!
 
 # use minitest-reporters to create xmls for jenkins and nicer terminal reporting
 require 'minitest/reporters'
-require 'minitest/reporters/screenshot_reporter'
 Minitest::Reporters.use! [Minitest::Reporters::SpecReporter.new,
-                          Minitest::Reporters::JUnitReporter.new,
-                          Minitest::Reporters::ScreenshotReporter.new]
+                          Minitest::Reporters::JUnitReporter.new]
 Minitest.backtrace_filter = Minitest::BacktraceFilter.new
 
 require File.expand_path("../../test/dummy/config/environment.rb",  __FILE__)
